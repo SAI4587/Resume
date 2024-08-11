@@ -1,0 +1,201 @@
+%-------------------------
+% Resume in Latex
+% Author : Sai Anand K
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Sai Anand K} \\ \vspace{1pt}
+    \small 7034758905 $|$ \href{mailto:saianandk2003@gmail.com}{{saianandk2003@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/saianandk}{{linkedin.com/in/saianandk}} $|$
+    \href{https://github.com/SAI4587}{{github.com/SAI4587}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {School of Engineering, CUSAT}{Kochi, Kerala}
+      {Bachelor of Computer Science}{Nov. 2021 -- Present}
+    \resumeSubheading
+      {Rahmania HSS For Handicapped}{Kozhikode, Kerala}
+      {Higher Secondary}{June. 2019 -- March 2021}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Development Engineer Intern}{June 2024 -- Present}
+      {Dataequinox Technology and Research Private Limited}{Koratty, Kerala}
+      \resumeItemListStart
+        \resumeItem{Gained experience building large scale chatbots for E-Commerce purpose}
+        \resumeItem{Knowledge about entire ChatBot Building methodology and architecture, from front-end to back-end}
+        \resumeItem{Built machine learning models for various modules}
+        \resumeItem{Fine tuned DistilBert for multilabel classification to identify category and subcategory of user query}
+        \resumeItem{Built KeyBERT, Spacy models for keyword identification and labelling intention}
+        \resumeItem{Used Gen AI like Google gen AI and Cohere AI to build Product recommendation systems, prompt engineered and fine tuned for performance}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Product Recommendation using Cohere AI} $|$ \emph{Python, langchain, PyPDF2}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a recommendation chatbot using AI models and document parsing techniques to provide product recommendations based on user queries}
+            \resumeItem{Integrated Cohere embeddings and retrieval mechanisms to analyze and respond to user questions with relevant product details}
+            \resumeItem{Implemented functionality for parsing both text and PDF documents, enabling the chatbot to handle various data sources seamlessly}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{AI Doctor Chatbot} $|$ \emph{Llama 2 by Meta, Hugging Face, Python, PyTorch, NumPy, pandas}}{}
+          \resumeItemListStart
+            \resumeItem{Built an AI by fine-tuning a pre-trained LLM (Llama 2 by Meta) with Hugging Face and re-trained it to chat with you about medical terms}
+            \resumeItem{Used preformatted data set from Hugging Face}
+            \resumeItem{Used Google Colab to chat with the model}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Care Connect} $|$ \emph{Flutter, Firebase, Dart, Kotlin}}{}
+          \resumeItemListStart
+            \resumeItem{Built an app to monitor phone inactivity of people under isolation, old people, etc.}
+            \resumeItem{Implemented scream and fall detection along with pill reminders.}
+            \resumeItem{Stored data and implemented login using firebase.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+  \resumeSubHeadingListStart
+    \resumeItemListStart
+      \resumeItem{Artificial Intelligence A-Z 2024 Build 7 AI LLM ChatGPT (Issued May 2024)}
+      \resumeItem{C++ Programming - Intermediate - G-Tec Computer Education (Issued May 2019)}
+      \resumeItem{Computer Hardware - G-Tec Computer Education (Issued May 2018)}
+      \resumeItem{Computer Operation - G-Tec Computer Education (Issued May 2013)}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C/C++} \\
+     \textbf{Frameworks}{: TensorFlow, PyTorch, Scikit-Learn} \\
+     \textbf{Developer Tools}{: Git, VS Code, PyCharm, Google Gen AI, Cohere AI, Mistral AI, GPT-4, Colab Notebook} \\
+     \textbf{Libraries}{: DistilBERT, pandas, NumPy, Matplotlib, Keras, Spacy, Hugging Face, transformers, KeyBERT}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
